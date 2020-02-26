@@ -1,6 +1,6 @@
 # Safe Deep Reinforcement Learning for Probabilistic Reachability and Safety Specifications
 
-PyTorch implementation of Safe Deep Reinforcement Learning for Probabilistic Reachability and Safety Specifications. See the [article](https://arxiv.org/abs/2002.10126) for the detailed description.
+PyTorch implementation of safety specification algorithms in _Safe Deep Reinforcement Learning for Probabilistic Reachability and Safety Specifications_. See the [article](https://arxiv.org/abs/2002.10126) for the detailed description.
 
 ### Requirements
 * [cplex](https://pypi.org/project/cplex/)
@@ -16,14 +16,18 @@ PyTorch implementation of Safe Deep Reinforcement Learning for Probabilistic Rea
 
 ### Usage
 Train the agents using the jupyter notebooks:
-> speculation-reacher.ipynb
-> speculation-tabular-integrator.ipynb
-
+```
+speculation-reacher.ipynb
+speculation-tabular-integrator.ipynb
+```
 You can also see and print experimental results by running:
-> speculation-reacher-plot.ipynb
-> speculation-tabular-integrator-plot.ipynb
+```
+speculation-reacher-plot.ipynb
+speculation-tabular-integrator-plot.ipynb
+```
 
-Hyper-parameters we used in the article are the same as what state in speculation-*.ipynb files, but they might be changed in future. 
+Hyper-parameters we used in the article are the same as what state in speculation-*.ipynb files, but they might be changed in future.
+The initial policies and the data associated with them can be found in the following links: [tabular Q-learning (tested on Integrator)](https://drive.google.com/file/d/1_Yejd_B_kvmYxxsD6ffZZHgpsR-KosgE/view?usp=sharing) and [DDPG (tested on Reacher)](https://drive.google.com/file/d/1NFop4eL_6EjdiwmWGyh6hnOp746eEZDj/view?usp=sharing).
 
 ### Bibtex
 ```
